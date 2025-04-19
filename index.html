@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniTask - Beranda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+        <a href="index.html" class="logo-link">
+            <img src="UniTask.png" alt="LogoUniTask" class="logo" loading="lazy">
+            <span>UniTask</span>
+        </a>
+      </div>      
+    <nav class="header-center">
+      <a href="index.html" class="active">BERANDA</a>
+      <a href="#layanan">LAYANAN</a>
+      <a href="#rekomendasi">REKOMENDASI</a>
+      <a href="#kontak">KONTAK</a>
+    </nav>
+    <div class="header-right">
+      <a href="#">DAFTAR</a>
+      <a href="#" class="masuk-btn">MASUK</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 data-aos="fade-up">Hidup Mahasiswa Lebih<br><span>Mudah & Praktis!</span></h1>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Mahasiswa zaman now butuh solusi cepat dan efisien untuk berbagai kebutuhan sehari-hari. UniTask hadir sebagai platform digital yang menghubungkan mahasiswa dengan berbagai layanan yang mempermudah kehidupan kampus
+      </p>
+      <button class="solusi-btn" data-aos="fade-up" data-aos-delay="400" onclick="window.location.href='#solusi'">
+        Temukan solusi<span>&#8250;</span>
+      </button>
+    </div>
+    <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+      <img class="ilustrasi" src="ilustrasimahasiswa.png" alt="Ilustrasi Mahasiswa" loading="lazy" />
+      <img class="bg" src="bgilustrasi.png" alt="BG Ilustrasi" loading="lazy" />
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+  </script>
+
+  <div class="gradient-transition"></div>
+
+  <section id="layanan" class="layanan">
+    <h2 data-aos="fade-up">LAYANAN KAMI</h2>
+    <p data-aos="fade-up" data-aos-delay="200">UniTask hadir menjadi solusi bagi kamu</p>
+
+    <div class="layanan-grid top">
+      <div class="card" data-aos="zoom-in">
+        <img src="UniRide.svg" alt="UniRide" />
+        <h3>UniRide</h3>
+        <p>Transportasi aman dan cepat untuk mobilitas mahasiswa di lingkungan kampus!</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="UniKeep.svg" alt="UniKeep" />
+        <h3>UniKeep</h3>
+        <p>Layanan penitipan barang dengan harga terjangkau khusus untuk mahasiswa.</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="UniShoes.svg" alt="UniShoes" />
+        <h3>UniShoes</h3>
+        <p>Cuci sepatu cepat dan bersih. Bikin sepatumu selalu tampil segar!</p>
+      </div>
+    </div>
+
+    <div class="layanan-grid bottom">
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="UniClean.svg" alt="UniClean" />
+        <h3>UniClean</h3>
+        <p>Jasa Laundry hadir sebagai solusi praktis. Pakaian bersih, wangi, dan siap pakai!</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="500">
+        <img src="UniSend.svg" alt="UniSend" />
+        <h3>UniSend</h3>
+        <p>Layanan titip antar barang dan perlengkapan kuliah dengan sistem mudah dan cepat.</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="600">
+        <img src="UniTeach.svg" alt="UniTeach" />
+        <h3>UniTeach</h3>
+        <p>Program kursus singkat dan pelatihan keterampilan mahasiswa secara praktis!</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="700">
+        <img src="UniRent.svg" alt="UniRent" />
+        <h3>UniRent</h3>
+        <p>Sewa alat, kendaraan, atau perlengkapan kampus dengan sistem mudah dan murah!</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <section id="solusi" class="solusi-section">
+    <div class="solusi-container">
+      <h2 class="title" data-aos="fade-up">Temukan Solusimu</h2>
+      <p class="description" data-aos="fade-up" data-aos-delay="200">
+        Sekarang anda dapat menghemat waktu dan biaya secara terjangkau, dengan banyak pilihan solusi anda
+      </p>
+
+      <form class="form-solusi">
+        <div class="form-group" data-aos="fade-left">
+          <select name="solusi" class="form-control">
+            <option value="">🔧 Solusi</option>
+            <option value="desain">Desain</option>
+            <option value="penulisan">Penulisan</option>
+            <option value="penerjemahan">Penerjemahan</option>
+          </select>
+        </div>
+
+        <div class="form-group" data-aos="fade-left" data-aos-delay="200">
+          <select name="harga" class="form-control">
+            <option value="">💰 Range Harga</option>
+            <option value="1">&lt; Rp100.000</option>
+            <option value="2">Rp100.000 - Rp300.000</option>
+            <option value="3">&gt; Rp300.000</option>
+          </select>
+        </div>
+
+        <div class="form-group" data-aos="fade-left" data-aos-delay="400">
+          <input type="text" class="form-control" placeholder="📍 Cari Berdasarkan Lokasi">
+        </div>
+
+        <button type="submit" class="btn-cari" data-aos="fade-left" data-aos-delay="700">Cari</button>
+      </form>
+
+      <div class="img-solusi">
+        <img src="solusi.png" alt="Temukan Solusimu" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="rekomendasi">
+    <h2 data-aos="fade-up">Rekomendasi Solusi Untukmu</h2>
+    <div class="rek-cards" data-aos="zoom-in">
+      <div class="rek-card">
+        <img src="makanan.jpg" alt="Distribusi Makanan">
+        <p>Mempermudah Distribusi Fasilitas Makanan</p>
+      </div>
+      <div class="rek-card">
+        <img src="unisend.png" alt="Fitur UniSend">
+        <p>Fitur UniSend Telah Hadir</p>
+      </div>
+    </div>
+    <div class="btn-wrapper">
+      <button class="cari-btn" data-aos="zoom-in" data-aos-delay="500">CARI</button>
+    </div>
+  </section>  
+
+  <section id="kontak" class="kontak">
+    <h2 data-aos="fade-up">Hubungi Kami
+      <p data-aos="fade-up">Silahkan hubungi kami untuk informsai lebih lanjut</p>
+    </h2>
+  
+    <div class="kontak-container" data-aos="zoom-in" data-aos-delay="200">
+      <form>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" placeholder="Nama Anda">
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email Anda">
+  
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" rows="5" placeholder="Tulis pesan Anda di sini..."></textarea>
+  
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h2>UniTask</h2>
+      <p>Menyajikan informasi terpercaya untuk semua</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/unitask.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Layanan</h3>
+      <ul>
+        <li><a href="#">Informasi Terkini</a></li>
+        <li><a href="#">Panduan Pengguna</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Perusahaan</h3>
+      <ul>
+        <li><a href="kontak.html">Tentang Kami</a></li>
+        <li><a href="#">Karir</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Berlangganan</h3>
+      <p>Dapatkan update terbaru dari kami</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Email Anda" />
+        <button type="submit">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <hr />
+  <div class="copyright">
+    © 2025 UniTask. Hak Cipta Dilindungi.
+  </div>
+</footer>
+</html>

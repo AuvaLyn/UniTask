@@ -938,7 +938,7 @@ hr {
 }
 
 /* LAYANAN */
-@media (max-width: 768px) {
+@media (max-width: 1024768px) {
   .layanan-grid {
     flex-direction: column;
     align-items: center;
@@ -952,7 +952,7 @@ hr {
 }
 
 /* SOLUSI */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .form-solusi {
     flex-direction: row;
     align-items: stretch;
@@ -972,7 +972,7 @@ hr {
 }
 
 /* REKOMENDASI */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .rek-cards {
     flex-direction: column;
     align-items: center;
@@ -985,7 +985,7 @@ hr {
 }
 
 /* KONTAK */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .kontak-container {
     padding: 1.5rem;
     margin: 20px;
@@ -993,7 +993,7 @@ hr {
 }
 
 /* FOOTER */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
@@ -1142,7 +1142,7 @@ hr {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hamburger {
     display: block;
   }

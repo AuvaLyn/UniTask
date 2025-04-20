@@ -911,11 +911,14 @@ hr {
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 40px 20px;
     height: auto;
   }
 
   .hero-content {
+    width: 100%;
     max-width: 100%;
     text-align: center;
   }
@@ -930,10 +933,14 @@ hr {
 
   .hero-image {
     margin-top: 0px;
+    width: 100%;
   }
 
   .hero-image img.ilustrasi {
     max-width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
@@ -1182,15 +1189,8 @@ hr {
   }
 }
 
-/* Mencegah scroll horizontal & potongan putih */
 body {
   overflow-x: hidden;
 }
-
-img, section, div, header, footer {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
 
 /* END OF CSS */

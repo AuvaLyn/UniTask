@@ -1182,4 +1182,15 @@ hr {
   }
 }
 
+/* Mencegah scroll horizontal & potongan putih */
+body {
+  overflow-x: hidden;
+}
+
+img, section, div, header, footer {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
 /* END OF CSS */

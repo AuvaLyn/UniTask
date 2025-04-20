@@ -12,13 +12,26 @@
 <body>
   <header>
     <div class="header-left">
-        <a href="index.html" class="logo-link">
-            <img src="UniTask.png" alt="LogoUniTask" class="logo" loading="lazy">
-            <span>UniTask</span>
-        </a>
-      </div>      
+      <a href="index.html" class="logo-link">
+          <img src="UniTask.png" alt="LogoUniTask" class="logo" loading="lazy">
+          <span>UniTask</span>
+      </a>
+    </div>      
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav class="mobile-nav" id="navMenu">
+      <div class="nav-links">
+        <a href="index.html">BERANDA</a>
+        <a href="#layanan">LAYANAN</a>
+        <a href="#rekomendasi">REKOMENDASI</a>
+        <a href="#kontak">KONTAK</a>
+      </div>
+      <div class="nav-login">
+        <a href="#">DAFTAR</a>
+        <a href="#" class="masuk-btn">MASUK</a>
+      </div>        
+    </nav>
     <nav class="header-center">
-      <a href="index.html" class="active">BERANDA</a>
+      <a href="index.html">BERANDA</a>
       <a href="#layanan">LAYANAN</a>
       <a href="#rekomendasi">REKOMENDASI</a>
       <a href="#kontak">KONTAK</a>
@@ -30,6 +43,10 @@
   </header>
 
   <section class="hero">
+    <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+      <img class="ilustrasi" src="ilustrasimahasiswa.png" alt="Ilustrasi Mahasiswa" loading="lazy" />
+      <img class="bg" src="bgilustrasi.png" alt="BG Ilustrasi" loading="lazy" />
+    </div>
     <div class="hero-content">
       <h1 data-aos="fade-up">Hidup Mahasiswa Lebih<br><span>Mudah & Praktis!</span></h1>
       <p data-aos="fade-up" data-aos-delay="200">
@@ -39,10 +56,7 @@
         Temukan solusi<span>&#8250;</span>
       </button>
     </div>
-    <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
-      <img class="ilustrasi" src="ilustrasimahasiswa.png" alt="Ilustrasi Mahasiswa" loading="lazy" />
-      <img class="bg" src="bgilustrasi.png" alt="BG Ilustrasi" loading="lazy" />
-    </div>
+    
   </section>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -150,7 +164,7 @@
     </div>
   </section>
 
-  <section id="rekomendasi" class="rekomendasi">
+  <section id="rekomendasi">
     <h2 data-aos="fade-up">Rekomendasi Solusi Untukmu</h2>
     <div class="rek-cards" data-aos="zoom-in">
       <div class="rek-card">
@@ -188,6 +202,13 @@
     </div>
   </section>
 
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("navMenu");
+      menu.classList.toggle("show");
+    }
+  </script>
+  
 </body>
 <footer class="footer">
   <div class="footer-container">

@@ -80,6 +80,11 @@ header {
   width: 100%;
 }
 
+.mobile-nav {
+  position: relative;
+  top: -100px;
+}
+
 .header-right {
   display: flex;
   gap: 20px;
@@ -101,8 +106,8 @@ header {
 }
 
 .header-right .masuk-btn:hover {
-    opacity: 0.8;
-    transform: scale(1.05);
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 .hero {
@@ -451,6 +456,17 @@ header {
   flex-wrap: wrap;
 }
 
+.rek-cards .rek-card {
+  width: 425px;
+  height: 300px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
 .rek-card {
   background-color: white;
   border-radius: 12px;
@@ -469,8 +485,9 @@ header {
 }
 
 .rek-card img {
+  height: 75%;
   width: 100%;
-  border-radius: 12px 12px 0 0;
+  border-radius: 12px 12px 12px 12px;
 }
 
 .rek-card p {
@@ -891,7 +908,7 @@ hr {
 }
 
 /* HERO SECTION */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hero {
     flex-direction: column;
     padding: 40px 20px;
@@ -907,8 +924,12 @@ hr {
     font-size: 32px;
   }
 
+  .hero-content .solusi-btn {
+    margin: auto;
+  }
+
   .hero-image {
-    margin-top: 30px;
+    margin-top: 0px;
   }
 
   .hero-image img.ilustrasi {
@@ -933,7 +954,7 @@ hr {
 /* SOLUSI */
 @media (max-width: 768px) {
   .form-solusi {
-    flex-direction: column;
+    flex-direction: row;
     align-items: stretch;
   }
 
@@ -946,7 +967,7 @@ hr {
   }
 
   .img-solusi img {
-    margin-top: 30px;
+    margin-top: -225px;
   }
 }
 
@@ -996,3 +1017,122 @@ hr {
     justify-content: center;
   }
 }
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive untuk navbar */
+@media (max-width: 1024px) {
+  .header-center {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #75d0e4;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .header-center.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    margin-top: -47px;
+  }
+}
+
+/* Menu default: desktop */
+.mobile-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.mobile-nav .nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.mobile-nav .nav-login {
+  display: flex;
+  gap: 20px;
+}
+
+/* Responsive: HP/tablet */
+@media (max-width: 1024px) {
+  .header-center {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .header-left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    align-items: center;
+  }
+  
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #75d0e4;
+    opacity: 85%;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    left: 768px;
+    width: 25%;
+    z-index: 99;
+  }
+
+  .mobile-nav.show {
+    display: flex;
+  }
+
+  .mobile-nav .nav-links,
+  .mobile-nav .nav-login {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mobile-nav a {
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .mobile-nav .masuk-btn {
+    background-color: white;
+    color: #2fb1f2;
+    padding: 6px 16px;
+    border-radius: 4px;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+/* END OF CSS */

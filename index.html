@@ -13,7 +13,7 @@
   <header>
     <div class="header-left">
       <a href="index.html" class="logo-link">
-          <img src="UniTask.png" alt="LogoUniTask" class="logo" loading="lazy">
+          <img src="UniTask New.svg" alt="LogoUniTask" class="logo" loading="lazy">
           <span>UniTask</span>
       </a>
     </div>      
@@ -27,7 +27,6 @@
       </div>
       <div class="nav-login">
         <a href="#">DAFTAR</a>
-        <a href="#" class="masuk-btn">MASUK</a>
       </div>        
     </nav>
     <nav class="header-center">
@@ -37,28 +36,25 @@
       <a href="#kontak">KONTAK</a>
     </nav>
     <div class="header-right">
-      <a href="#">DAFTAR</a>
-      <a href="#" class="masuk-btn">MASUK</a>
+      <a href="login.php" class="masuk-btn sign-in-black">Sign In</a>
     </div>
   </header>
 
   <section class="hero">
-    <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
-      <img class="ilustrasi" src="ilustrasimahasiswa.png" alt="Ilustrasi Mahasiswa" loading="lazy" />
-      <img class="bg" src="bgilustrasi.png" alt="BG Ilustrasi" loading="lazy" />
-    </div>
+    <img src="bg.svg" alt="Background Warna-warni" class="hero-bg-svg" />
     <div class="hero-content">
-      <h1 data-aos="fade-up">Hidup Mahasiswa Lebih<br><span>Mudah & Praktis!</span></h1>
-      <p data-aos="fade-up" data-aos-delay="200">
-        Mahasiswa zaman now butuh solusi cepat dan efisien untuk berbagai kebutuhan sehari-hari. 
-        UniTask hadir sebagai platform digital yang menghubungkan mahasiswa dengan berbagai layanan 
-        yang mempermudah kehidupan kampus
+      <h1 data-aos="fade-up">Hidup Mahasiswa Lebih Mudah dan Praktis</h1>
+      <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+        Mahasiswa zaman now butuh solusi cepat dan efisien untuk berbagai kebutuhan sehari-hari. UniTask hadir sebagai platform digital yang menghubungkan mahasiswa dengan berbagai layanan yang mempermudah kehidupan kampus
       </p>
-      <button class="solusi-btn" data-aos="fade-up" data-aos-delay="400" onclick="window.location.href='#solusi'">
-        Temukan solusi<span>&#8250;</span>
-      </button>
+      <div class="hero-btn-group" data-aos="fade-up" data-aos-delay="400">
+        <button class="solusi-btn" onclick="window.location.href='#solusi'">Temukan Solusi</button>
+        <button class="kontak-btn" onclick="window.location.href='#kontak'">Kontak</button>
+      </div>
     </div>
-    
+    <div class="hero-mockup" data-aos="fade-left" data-aos-delay="200">
+      <img src="Phone.png" alt="Mockup Phone" class="mockup-phone" />
+    </div>
   </section>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -68,8 +64,6 @@
     once: true
   });
   </script>
-
-  <div class="gradient-transition"></div>
 
   <section id="layanan" class="layanan">
     <h2 data-aos="fade-up">LAYANAN KAMI</h2>
@@ -134,7 +128,7 @@
         Sekarang anda dapat menghemat waktu dan biaya secara terjangkau, dengan banyak pilihan solusi anda
       </p>
 
-      <form class="form-solusi">
+      <form class="form-solusi" action="#" method="post">
         <div class="form-group" data-aos="fade-left">
           <select name="solusi" class="form-control">
             <option value="">🔧 Solusi</option>
@@ -166,15 +160,15 @@
     </div>
   </section>
 
-  <section id="rekomendasi">
+  <section id="rekomendasi" class="rekomendasi">
     <h2 data-aos="fade-up">Rekomendasi Solusi Untukmu</h2>
     <div class="rek-cards" data-aos="zoom-in">
       <div class="rek-card">
-        <img src="makanan.jpg" alt="Distribusi Makanan">
+        <img src="Food Cuisine.jpg" alt="Distribusi Makanan">
         <p>Mempermudah Distribusi Fasilitas Makanan</p>
       </div>
       <div class="rek-card">
-        <img src="unisend.png" alt="Fitur UniSend">
+        <img src="Delivery.jpg" alt="Fitur UniSend">
         <p>Fitur UniSend Telah Hadir</p>
       </div>
     </div>
@@ -184,12 +178,11 @@
   </section>  
 
   <section id="kontak" class="kontak">
-    <h2 data-aos="fade-up">Hubungi Kami
-      <p data-aos="fade-up">Silahkan hubungi kami untuk informsai lebih lanjut</p>
-    </h2>
+    <h2 data-aos="fade-up">Hubungi Kami</h2>
+    <p data-aos="fade-up">Silahkan hubungi kami untuk informasi lebih lanjut</p>
   
     <div class="kontak-container" data-aos="zoom-in" data-aos-delay="200">
-      <form>
+      <form action="#" method="post">
         <label for="nama">Nama</label>
         <input type="text" id="nama" placeholder="Nama Anda">
   
@@ -261,4 +254,3 @@
   </div>
 </footer>
 </html>
-
